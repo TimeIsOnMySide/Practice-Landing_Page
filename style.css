@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%
+    font-size: 62.5%;
 }
 
 body {
@@ -11,9 +11,11 @@ body {
 nav {
     height: 55px;
     width: 100%;
-    background-color: #5333ed;
-    /* Want to make the navbar a gradient */
+    background: rgb(83,51,237);
+    background: linear-gradient(90deg, rgba(83,51,237,1) 0%, rgba(0,137,255,1) 100%);
     color: white;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +29,7 @@ nav h1 {
 
 .nav-links-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
 }
 
 .nav-links {
@@ -43,16 +45,25 @@ nav h1 {
     font-family: Helvetica, sans-serif;
 }
 
+.nav-links:hover {
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: blueviolet;
+    transition: 0.5s;
+}
+
 /* Main top page styling (Section1) */
 
-main h1 {
+#section1 h1 {
     font-size: 4rem;
     font-family: Helvetica, sans-serif;
     font-weight: 600;
     color: grey;
 }
 
-main h2 {
+#section1 h2 {
     font-family: Helvetica, sans-serif;
     font-weight: normal;
     color: grey;
@@ -60,7 +71,7 @@ main h2 {
 
 #section1 {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -130,6 +141,44 @@ input[type=submit]:hover {
       background-color: blueviolet;
       transition: 0.5s;
   }
+
+/* Section 2 about us styling */
+
+#section2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(83,51,237);
+background: linear-gradient(90deg, rgba(83,51,237,1) 0%, rgba(0,137,255,1) 100%);
+}
+
+#section2 h1 {
+    font-size: 4rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    color: #352B48;
+}
+
+#section2 p {
+    font-size: 1.7rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: 1.8;
+    text-indent: 8%;
+    color: #352B48;
+}
+
+#aboutHeader {
+    padding-left: 10%;
+}
+
+#aboutBody {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 
 /* Media query to change flex direction to column on mobile */
 
