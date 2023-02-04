@@ -87,7 +87,7 @@ nav h1 {
     height: 200px;
 }
 
-form {
+#section1 form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +96,7 @@ form {
     padding: 20px;
 }
 
-input[type=email] {
+#section1 input[type=email] {
     padding: 8px;
     margin-bottom: 20px;
     width: 100%;
@@ -107,7 +107,7 @@ input[type=email] {
     font-size: 1.5rem;
 }
 
-input[type=submit] {
+#section1 input[type=submit] {
     width: 70%;
     padding: 10px;
     background-color:#5333ed;
@@ -117,12 +117,10 @@ input[type=submit] {
     font-family: Helvetica, sans-serif;
     font-size: 1.5rem;
 }
-input[type=submit]:hover {
+#section1 input[type=submit]:hover {
     background-color: blueviolet;
     transition: 0.5s;
 }
-
-/* Sign up button styling (Make color gradient?) */
 
 #show-hide-textbox {
     background-color:#5333ed;
@@ -151,14 +149,15 @@ input[type=submit]:hover {
     flex-direction: column;
     justify-content: center;
     background: rgb(83,51,237);
-background: linear-gradient(90deg, rgba(83,51,237,1) 0%, rgba(0,137,255,1) 100%);
+    background: linear-gradient(90deg, rgba(83,51,237,1) 0%, rgba(0,137,255,1) 100%);
 }
 
 #section2 h1 {
     font-size: 4rem;
     font-family: Helvetica, sans-serif;
     font-weight: 600;
-    color: #352B48;
+    /* color: #352B48; */
+    color: white;
 }
 
 #section2 p {
@@ -167,7 +166,8 @@ background: linear-gradient(90deg, rgba(83,51,237,1) 0%, rgba(0,137,255,1) 100%)
     font-weight: normal;
     line-height: 1.8;
     text-indent: 8%;
-    color: #352B48;
+    /* color: #352B48; */
+    color: white;
 }
 
 #aboutHeader {
@@ -179,6 +179,89 @@ background: linear-gradient(90deg, rgba(83,51,237,1) 0%, rgba(0,137,255,1) 100%)
     padding-right: 10%;
 }
 
+/* Section 3 contact form styling */
+#section3 {
+    width: 100vw;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/contactPageBackground.jpg);
+    background-size: 100%;
+}
+
+#contactTile {
+    background-color: white;
+    min-width: 40vw;
+    min-height: 60vh;
+    border-radius: 10px;
+    box-shadow:0 0 20px 5px rgba(0,0,0,0.5);
+}
+
+#contactTile h1 {
+    font-size: 3rem;
+    font-family: Helvetica, sans-serif;
+    /* font-weight: 600; */
+    color: rgba(57,96,195,1);
+    text-align: center;
+}
+
+#section3 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 77%;
+}
+
+#section3 input[type=text] {
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+#section3 input[type=email] {
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+#section3 textarea {
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+#section3 input[type=submit] {
+    width: 30%;
+    padding: 10px;
+    background-color:#5333ed;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+#section3 input[type=submit]:hover {
+    background-color: blueviolet;
+    transition: 0.5s;
+}
 
 /* Media query to change flex direction to column on mobile */
 

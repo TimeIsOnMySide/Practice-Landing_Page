@@ -35,3 +35,17 @@ function scrollFunction1() {
       inline: 'center'
     });
   }
+
+  function scrollFunction3() {
+    let e = document.getElementById('section3');
+    // This ends the block to the window 
+    // bottom and also aligns the view to the center 
+    e.scrollIntoView({
+      block: 'end',
+      behavior: 'smooth',
+      inline: 'center'
+    });
+  }
+
+  //======================================================================
+
